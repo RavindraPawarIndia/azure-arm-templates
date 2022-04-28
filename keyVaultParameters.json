@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmpassword": {
+            "reference": {
+                "keyvault": {
+                    "id": "/subscriptions/964df7ca-3ba4-48b6-a695-1ed9db5723f8/resourceGroups/1-f523b722-playground-sandbox/providers/Microsoft.KeyVault/vaults/neptunekv"
+                },
+            "secretName": "vmpassword"
+            }
+        }
+    }
+}
